@@ -23,7 +23,7 @@ export default function Home({ exploreData }) {
           <h2 className='text-4xl font-semibold pb-5'>Explore Nearby</h2>
 
           {/* pull come data from a server - API endpoints */}
-          {exploreData?.map((img, distance, location) => (
+          {exploreData?.map(({ img, distance, location }) => (
             <SmallCard
               key={img}
               img={img}
@@ -38,7 +38,7 @@ export default function Home({ exploreData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch("https://www.jsonkeeper.com/b/YRGK").then(
+  const exploreData = await fetch("https://www.jsonkeeper.com/b/PQ49").then(
     (res) => res.json()
   );
 
