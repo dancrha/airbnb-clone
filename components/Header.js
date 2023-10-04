@@ -91,12 +91,12 @@ function Header() {
           <div className='flex'>
             <button
               onClick={resetInput}
-              className='flex-grow border-2 rounded-lg px-4 py-2 text-gray-500 font-semibold mr-2 hover:scale-105 transition duration-150 shadow-md'
+              className='flex-grow border rounded-lg px-4 py-2 text-gray-500 font-semibold mr-2 hover:shadow-lg active:scale-95 hover:scale-105 transition duration-150 shadow-md active:bg-gray-100 ease-out'
             >
               Cancel
             </button>
 
-            <button className='flex-grow ml-2 text-white font-semibold rounded-lg px-4 py-2 bg-red-400 hover:scale-105 transition duration-150 shadow-md'>
+            <button className='flex-grow ml-2 text-white font-semibold rounded-lg px-4 py-2 bg-red-400 hover:shadow-lg active:scale-95 hover:scale-105 transition duration-150 shadow-md ease-out'>
               Search
             </button>
           </div>
