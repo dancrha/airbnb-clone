@@ -7,7 +7,7 @@ function Banner() {
       <Image
         src='https://links.papareact.com/0fm'
         fill
-        objectFit='cover'
+        style={{ objectFit: "cover" }}
         alt='banner-image'
       />
 

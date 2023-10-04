@@ -15,8 +15,7 @@ function Header() {
         <Image
           src={"https://links.papareact.com/qd3"}
           fill
-          objectFit='contain'
-          objectPosition='left'
+          style={{ objectFit: "contain", objectPosition: "left" }}
           alt='header-image'
         />
       </div>

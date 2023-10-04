@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+/* @type {import('next').NextConfig} */
 
 const nextConfig = {
   reactStrictMode: true,
@@ -13,9 +13,11 @@ module.exports = {
       "https://ibb.co/Cs15L83",
       "https://yourimageshare.com/ib/9QRZPXnWHs",
       "yourimageshare.com",
-      "https://www.jsonkeeper.com/b/BTT7",
-      "https://www.jsonkeeper.com/b/1F0X",
       "freeimage.host",
+      "app.gemoo.com",
+      "imageupload.io",
+      "https://imageupload.io/rvxHUlYv6OEdww2",
+      "pasteboard.co",
     ],
   },
 };
