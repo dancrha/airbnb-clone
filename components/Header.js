@@ -22,6 +22,10 @@ function Header() {
     setEndDate(ranges.selection.endDate);
   };
 
+  const resetInput = () => {
+    setSearchInput("");
+  };
+
   const selectionRange = {
     startDate: startDate,
     endDate: endDate,
@@ -83,6 +87,18 @@ function Header() {
               type='number'
               className='w-12 pl-2 text-lg outline-none text-red-400 font-semibold'
             />
+          </div>
+          <div className='flex'>
+            <button
+              onClick={resetInput}
+              className='flex-grow border-2 rounded-lg px-4 py-2 text-gray-500 font-semibold mr-2 hover:scale-105 transition duration-150 shadow-md'
+            >
+              Cancel
+            </button>
+
+            <button className='flex-grow ml-2 text-white font-semibold rounded-lg px-4 py-2 bg-red-400 hover:scale-105 transition duration-150 shadow-md'>
+              Search
+            </button>
           </div>
         </div>
       )}
