@@ -11,6 +11,7 @@ function InfoCard({ img, location, title, description, star, price, total }) {
           fill
           style={{ objectFit: "cover" }}
           className='rounded-2xl'
+          alt='info-card-image'
         />
       </div>
 
