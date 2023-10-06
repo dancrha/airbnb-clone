@@ -33,10 +33,25 @@ function MapComponent({ searchResults }) {
             <p
               onClick={() => setSelectedLocation(result)}
               className='cursor-pointer text-2xl animate-bounce'
+              role='img'
+              aria-label='push-pin'
             >
               📍test
             </p>
           </Marker>
+
+          {selectedLocation.long === result.long ? (
+            <Popup
+              onClose={() => setSelectedLocation({})}
+              closeOnClick={true}
+              longitude={result.long}
+              latitude={result.lat}
+            >
+              {result.title}
+            </Popup>
+          ) : (
+            false
+          )}
         </div>
       ))}
     </Map>
