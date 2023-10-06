@@ -6,18 +6,10 @@ const nextConfig = {
 
 module.exports = {
   images: {
-    domains: [
-      "links.papareact.com",
-      "www.jsonkeeper.com",
-      "ibb.co",
-      "https://ibb.co/Cs15L83",
-      "https://yourimageshare.com/ib/9QRZPXnWHs",
-      "yourimageshare.com",
-      "freeimage.host",
-      "app.gemoo.com",
-      "imageupload.io",
-      "https://imageupload.io/rvxHUlYv6OEdww2",
-      "pasteboard.co",
-    ],
+    domains: ["links.papareact.com", "www.jsonkeeper.com"],
+  },
+  env: {
+    mapbox_key:
+      "pk.eyJ1IjoiZGMxNzA4IiwiYSI6ImNsbmRwNjJsaDA2bXEycHBlbm5pM3I4aWkifQ.C5T1HKvwsy_YqJaCSEZTEg",
   },
 };
